@@ -85,7 +85,20 @@
         }
         textarea{
           opacity: 0.3;
-          border: 1px solid #000 !important;; 
+          border: 1px solid #000 !important;
+        }
+      }
+
+      @media print{
+        .comment{
+          margin: 25px;
+          font-size: 20px;
+          color: #14447C;
+        }
+        textarea{
+          opacity: 0.3;
+          border: 1px solid #000 !important;
+          height: 300px;
         }
       }
 
@@ -157,29 +170,41 @@
       </div>
 
       <div class="row text-body">
+        &nbsp;&nbsp;&nbsp;
+      </div>
+
+      <div class="row text-body">
         
           <div class="col-6 col-lg-6">
               <label class="comment">Sebelum dipotong</label>
-              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <textarea class="form-control" rows="5"></textarea>
           </div>
           <div class="col-6 col-lg-6">
               <label class="comment">Setelah dipotong</label>
-              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <textarea class="form-control" rows="5"></textarea>
           </div>
        
 
        
           <div class="col-6 col-lg-6">
               <label class="comment">Proses pencacahan</label>
-              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <textarea class="form-control" rows="5"></textarea>
           </div>
           <div class="col-6 col-lg-6">
               <label class="comment">Proses pendistribusian</label>
-              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <textarea class="form-control" rows="5"></textarea>
           </div>
           
       </div> 
       
+      <div class="row text-body">
+        &nbsp;&nbsp;&nbsp;
+      </div>
+
+      <div class="row text-body">
+        &nbsp;&nbsp;&nbsp;
+      </div>
+
       <div class="row text-body">
         &nbsp;&nbsp;&nbsp;
       </div>

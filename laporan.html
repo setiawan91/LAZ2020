@@ -11,7 +11,58 @@
     <title>Laporan Qurban 2020</title>
     
     <style type="text/css">
-     
+      /*for print to pdf / hardcopy printer*/
+      @media print {
+        body {
+          margin: 0;
+          color: #000;
+          background-color: #000;
+        }
+
+        pre{
+          border: none;
+          font-size: 18px;
+        }
+
+        h3{
+        color: #14447C;
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+        .font-lead-mobile{
+          margin-top: -50px;
+          font-size: 40px;
+          font-weight: bold;
+        }
+        
+        .img-address{
+          height: 60px;
+        }
+
+        .img-foot{
+          height: 25px;
+          width: 100%;
+          margin: 0;
+        }
+
+        .img-hero{
+          height: 300px;
+          width: 100%;
+        }
+        
+        .img-logo{
+          height: 75px;
+          width: 300px;
+          position: relative;
+          left:40%;
+        }
+
+        .text-foot{
+          background-color: #14447C;
+        }
+      }
+
       /*Mobile Screen*/
       @media (max-width: 480px) {
         body {
@@ -53,25 +104,50 @@
             background-color: #ccc;
         }
         .font-lead-mobile{
+          margin-top: -50px;
           font-weight: bold;
         }
+
+        .img-address{
+          height: 40px;
+        }
+
+        .img-foot{
+          height: 25px;
+          width: 100%;
+        }
+
+        .img-hero{
+          height: 200px;
+          width: 100%;
+        }
+
         .img-lead{
             background: url('assets/laporan/img/fotoqurban.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 300px;
         }
+
+        .img-logo{
+          height: 50px;
+          width: 185px;
+        }
+
         .img-right{
             float: right;
         }
+        
         .main{
           width: 50%;
           height: auto;
         }
+
         .text-lead{
           background-color: #fff;
           margin-top: 0px;
         }
+        
         .text-body{
           background-color: #fff;
           background-image: url('assets/laporan/img/logoypitransparan.png') ;
@@ -85,9 +161,11 @@
           font-size: 14px;
           color: #14447C;
         }
+
         h3{
         color: #14447C;
         }
+        
         textarea{
           opacity: 0.3;
           border: 1px solid #000 !important;
@@ -121,15 +199,14 @@
       <div class="row">
         <div class="top-rights" style="position: absolute;
         top: 25px;
-        left:25%;
-        width: 50%;
-        height: auto;">
-          <img src="assets/laporan/img/logolaz.png" height="100" width="200" class="img-fluid img-rights" style="float: right;">
+        left:23%;
+        width: 50%;">
+          <img src="assets/laporan/img/logolaz.png" class="img-logo" style="float: right;">
         </div>
       </div>
       
       <div class="row img-lead">
-          <img src="assets/laporan/img/fotoqurban.png" height="200" width="100%">
+          <img src="assets/laporan/img/fotoqurban.png" class="img-hero">
       </div>
       
       <div class="row text-lead">  
@@ -193,10 +270,10 @@
       <div class="row text-body">
         
           <div class="col-6 col-lg-6">
-              <img src="assets/laporan/img/alamatpusat.png" height="40">
+              <img src="assets/laporan/img/alamatpusat.png" class="img-address">
           </div>
           <div class="col-6 col-lg-6">
-              <img src="assets/laporan/img/alamatfatmawati.png" height="40">
+              <img src="assets/laporan/img/alamatfatmawati.png" class="img-address">
           </div>
           
       </div>   
@@ -208,10 +285,10 @@
       <div class="row text-foot" style="background-color: #14447C;">
         
           <div class="col-9 col-lg-9" style="background-color: #14447C;">
-              <img src="assets/laporan/img/callcenter.png" height="25" width="100%">
+              <img src="assets/laporan/img/callcenter.png" height="25" class="img-foot">
           </div>
           <div class="col-3 col-lg-3" style="background-color: #14447C;">
-              <img src="assets/laporan/img/website.png" height="25" width="100%">
+              <img src="assets/laporan/img/website.png" height="25" class="img-foot">
           </div>
           
       </div>
